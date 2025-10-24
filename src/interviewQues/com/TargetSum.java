@@ -34,6 +34,7 @@ public class TargetSum {
 		List<Integer> nums = Arrays.asList(1,3,2,3,2,4,5,6,1);
         List<Integer> res1 = nums.stream().filter(n->nums.indexOf(n)==nums.lastIndexOf(n)).collect(Collectors.toList());
         System.out.println(res1);
+<<<<<<< HEAD
         
         //merge two lists
         List<Integer> list1= Arrays.asList(1,9,5,3,7);
@@ -41,6 +42,14 @@ public class TargetSum {
 		Stream<Integer> newStream = Stream.concat(list1.stream(), list2.stream());
 	    
 		//adding into one list   
+=======
+
+       //adding merge list
+		List<Integer> list1= Arrays.asList(1,9,5,3,7);
+		List<Integer> list2 = Arrays.asList(10,6,8,4,2);
+		Stream<Integer> newStream = Stream.concat(list1.stream(), list2.stream());
+		
+>>>>>>> bad4db14ca5bcd00cf39f0af168ed41815a24fb9
 		
 		List<Integer>newList = newStream.sorted().collect(Collectors.toList());
 		System.out.println(newList);
